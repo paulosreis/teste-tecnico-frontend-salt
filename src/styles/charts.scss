@@ -2,21 +2,45 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 100px;
+
     
-.chart1 {
+.box-barra {
     width: 50%;
+
     margin-left: 28px;
     margin-right: 14px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    
 }
 }
-.chart2 {
+.box-scatter {
     width: 50%;
     margin-left: 14px;
     margin-right: 28px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+}
+
+.barras {
+    margin-top: 6px;
+    margin-right: 38px;
+    margin-left: 39px;
+
+}
+
+.scatter {
+    margin-top: 6px;
+    margin-right: 51px;
+    margin-bottom: 14px;
+    margin-left: 50px;
+}
+
+h2 {
+    margin-top: 21px;
+    margin-left: 23px;
+    color: #5D405C;
 }

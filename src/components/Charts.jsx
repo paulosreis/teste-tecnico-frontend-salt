@@ -69,16 +69,16 @@ export function Charts() {
     return (  
         <section id="charts">
 
-            <div className="chart1">
-                <h2>Chart 1</h2>
+            <div className="box-barra">
+                <h2>Barras</h2>
                
-                <ReactApexChart options={options} series={series} type="bar" height={350} />
+                <ReactApexChart className="barras" options={options} series={series} type="bar" height={350} />
             </div>
 
-            <div className="chart2">
-                <h2>Chart 2</h2>
+            <div className="box-scatter">
+                <h2>Scatter</h2>
                 
-                <ReactApexChart options={options2} series={series2} type="scatter" height={350} />
+                <ReactApexChart className="scatter" options={options2} series={series2} type="scatter" height={350} />
 
             </div>
 
