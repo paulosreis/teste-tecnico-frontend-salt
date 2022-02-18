@@ -1,35 +1,53 @@
+// Media Query Mixin - Desktop-first
+@mixin paraTelasPequenas($media) {
+    @media (max-width: ($media/16+em)) {
+        @content;
+    }
+}
+
 #charts {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 100px;
+    @include paraTelasPequenas(900) {
+        flex-direction: column;
+     }
 
-    
+}
 .box-barra {
     width: 50%;
-
     margin-left: 28px;
     margin-right: 14px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    
-}
+    @include paraTelasPequenas(900) {
+        width: 90%;
+        margin: 0;
+        align-self: center;
+        margin-bottom: 24px;
+     }
 }
 .box-scatter {
     width: 50%;
     margin-left: 14px;
     margin-right: 28px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    @include paraTelasPequenas(900) {
+        width: 90%;
+        margin: 0;
+        align-self: center;
+    
+     }
 }
 
 .barras {
     margin-top: 6px;
     margin-right: 38px;
     margin-left: 39px;
-
 }
 
 .scatter {
@@ -42,5 +60,5 @@
 h2 {
     margin-top: 21px;
     margin-left: 23px;
-    color: #5D405C;
+    color: #5d405c;
 }

@@ -1,10 +1,24 @@
+@mixin paraTelasPequenas($media) {
+    @media (max-width: ($media/16+em)) {
+        @content;
+    }
+}
+
+
 #description {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: 28px;
-    margin-right: 24px;
+    margin-right: 24px;    
     margin-bottom: 45px;
+    @include paraTelasPequenas(900) {
+        flex-direction: column;
+        margin-bottom: 24px;
+        width: 100%;
+        padding: 5%;
+        margin-left: 0;
+     }
 
 }
 
@@ -24,6 +38,9 @@
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
+    @include paraTelasPequenas(900) {
+        margin-top: 16px;
+     }
 }
 
 .texto {
