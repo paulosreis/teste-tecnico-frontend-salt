@@ -2,7 +2,7 @@
 
 > Aplicação em ReactJs que simula um dashboard utilizando a biblioteca ApexchartsJs. Projeto desenvolvido para um teste técnico na empresa Salt Rh.
 
-### ✨ [Demo](www.com)
+### ✨ [Demo(hosting on heroku)](https://dashboard-salt.herokuapp.com/)
 
 ## Install the dependencies
 
